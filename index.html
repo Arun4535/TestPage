@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playwright Test Page</title>
+    <script>
+        function redirectToGoogle() {
+            window.location.href = 'https://www.google.com';
+        }
+    </script>
+</head>
+<body>
+    <button role="button" id="explicit-role" onclick="redirectToGoogle()">Button with Role</button>
+    <button onclick="redirectToGoogle()">Button with Text</button>
+    <label for="input-label">Label for Input</label>
+    <input id="input-label" type="text" onclick="redirectToGoogle()">
+    <input placeholder="Placeholder Text" type="text" onclick="redirectToGoogle()">
+    <img src="image.jpg" alt="Image Alt Text" onclick="redirectToGoogle()">
+    <button title="Button Title" onclick="redirectToGoogle()">Button with Title</button>
+    <button data-testid="test-id-button" onclick="redirectToGoogle()">Button with Test ID</button>
+</body>
+</html>

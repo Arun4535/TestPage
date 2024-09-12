@@ -19,5 +19,55 @@
     <img src="image.jpg" alt="Image Alt Text" onclick="redirectToGoogle()">
     <button title="Button Title" onclick="redirectToGoogle()">Button with Title</button>
     <button data-testid="test-id-button" onclick="redirectToGoogle()">Button with Test ID</button>
+
+    <h2> HTML Form for Fill()</h2>
+    <form>
+        <!-- getByRole -->
+        <label for="firstname-role">First Name:</label>
+        <input type="text" id="firstname-role" placeholder="Enter your first name" title="First Name Input" data-testid="firstname-role-input"><br><br>
+
+        <!-- getByText -->
+        <label for="lastname-text">Last Name:</label>
+        <input type="text" id="lastname-text" placeholder="Enter your last name" title="Last Name Input" data-testid="lastname-text-input"><br><br>
+
+        <!-- getByLabel -->
+        <label for="address1-label">Address Line 1:</label>
+        <input type="text" id="address1-label" placeholder="Enter your address line 1" title="Address Line 1 Input" data-testid="address1-label-input"><br><br>
+
+        <!-- getByPlaceholder -->
+        <label for="address2-placeholder">Address Line 2:</label>
+        <input type="text" id="address2-placeholder" placeholder="Enter your address line 2" title="Address Line 2 Input" data-testid="address2-placeholder-input"><br><br>
+
+        <!-- getByAltText -->
+        <img src="example.jpg" alt="Example Image" title="Example Image" data-testid="example-image"><br><br>
+
+        <!-- getByTitle -->
+        <label for="city-title">City:</label>
+        <input type="text" id="city-title" placeholder="Enter your city" title="City Input" data-testid="city-title-input"><br><br>
+
+        <!-- getByTestId -->
+        <label for="study-testid">Field of Study:</label>
+        <input type="text" id="study-testid" placeholder="Enter your field of study" title="Field of Study Input" data-testid="study-testid-input"><br><br>
+
+        <!-- CSS Locator -->
+        <label for="university-css">University/College Name:</label>
+        <input type="text" id="university-css" placeholder="Enter your university/college name" title="University/College Name Input" data-testid="university-css-input"><br><br>
+
+        <!-- XPath Locator -->
+        <label for="graduation-xpath">Graduation Year:</label>
+        <input type="text" id="graduation-xpath" placeholder="Enter your graduation year" title="Graduation Year Input" data-testid="graduation-xpath-input"><br><br>
+
+        <!-- Additional Fields -->
+        <label for="languages">Languages Spoken:</label>
+        <input type="text" id="languages" placeholder="Enter languages you speak" title="Languages Spoken Input" data-testid="languages-input"><br><br>
+
+        <label for="hobbies">Hobbies/Interests:</label>
+        <input type="text" id="hobbies" placeholder="Enter your hobbies/interests" title="Hobbies/Interests Input" data-testid="hobbies-input"><br><br>
+
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" placeholder="Enter your skills" title="Skills Input" data-testid="skills-input"><br><br>
+
+        <button type="submit" title="Submit Button" data-testid="submit-button">Submit</button>
+    </form>
 </body>
 </html>

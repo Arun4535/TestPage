@@ -20,7 +20,22 @@
     <button title="Button Title" onclick="redirectToGoogle()">Button with Title</button>
     <button data-testid="test-id-button" onclick="redirectToGoogle()">Button with Test ID</button>
 
-    <h2> HTML Form for Fill()</h2>
+    <h2> HTML Form for Fill()</h2><form>
+        <label for="terms">I agree to the terms</label>
+        <input type="checkbox" id="terms" alt="terms-checkbox" data-testid="terms-checkbox">
+
+        <label for="newsletter">Subscribe to newsletter</label>
+        <input type="checkbox" id="newsletter" placeholder="newsletter-checkbox" data-testid="newsletter-checkbox">
+
+        <label for="updates">Receive updates</label>
+        <input type="checkbox" id="updates" title="updates-checkbox" data-testid="updates-checkbox">
+
+        <label for="offers">Get special offers</label>
+        <input type="checkbox" id="offers" data-testid="offers-checkbox">
+
+        <label for="notifications">Enable notifications</label>
+        <input type="checkbox" id="notifications" data-testid="notifications-checkbox">
+    </form>
     <form>
         <!-- getByRole -->
         <label for="firstname-role">First Name:</label>
@@ -65,6 +80,24 @@
         <input type="text" id="skills" placeholder="Enter your skills" title="Skills Input" data-testid="skills-input"><br><br>
 
         <button type="submit" title="Submit Button" data-testid="submit-button">Submit</button>
+    </form>
+
+    <h2> HTML Form for Check, Uncheck</h2><form>
+    <form>
+        <label for="terms">I agree to the terms</label>
+        <input type="checkbox" id="terms" alt="terms-checkbox" data-testid="terms-checkbox">
+
+        <label for="newsletter">Subscribe to newsletter</label>
+        <input type="checkbox" id="newsletter" placeholder="newsletter-checkbox" data-testid="newsletter-checkbox">
+
+        <label for="updates">Receive updates</label>
+        <input type="checkbox" id="updates" title="updates-checkbox" data-testid="updates-checkbox">
+
+        <label for="offers">Get special offers</label>
+        <input type="checkbox" id="offers" data-testid="offers-checkbox">
+
+        <label for="notifications">Enable notifications</label>
+        <input type="checkbox" id="notifications" data-testid="notifications-checkbox">
     </form>
 </body>
 </html>

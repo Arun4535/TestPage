@@ -8,11 +8,17 @@
         function redirectToGoogle() {
             window.location.href = 'https://sqa.3genlabs.net/hawksyntheticpageserver/';
         }
-        <script>
         document.getElementById('null-div').value = null;
         document.getElementById('undefined-div').value = undefined;
         document.getElementById('nan-div').value = NaN;
-    </script>
+
+        window.containmentVerbsInput = {
+            toContain: 'Playwright',
+            toContainEqual: 'Item 1',
+            arrayContaining: ['Item 1', 'Item 2'],
+            objectContaining: { a: 1 },
+            stringContaining: 'awesome'
+        };
     </script>
 </head>
 <body>
@@ -125,5 +131,15 @@
     <div id="undefined-div"></div>
     <div id="defined-div">Defined</div>
     <div id="nan-div"></div>
+
+    <h2> div for Containment verbs</h2>
+    <div id="content">
+        <p>Playwright is awesome!</p>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
 </body>
 </html>
